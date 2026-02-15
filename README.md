@@ -253,7 +253,7 @@ git push origin feature/AmazingFeature
 
 ## 👨‍💻 Author
 
-**Hari Nadar Reddy**
+**Hari Nada Reddy**
 
 [![GitHub](https://img.shields.io/badge/GitHub-harinadareddy11-181717?style=flat&logo=github)](https://github.com/harinadareddy11)
 
