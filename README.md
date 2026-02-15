@@ -1,18 +1,18 @@
 <div align="center">
 
-# 📚 BudgetBookz – Smart Student Book Marketplace
+# 📚 BudgetBookz
 
-<img src="https://img.shields.io/badge/React-18-blue.svg" />
-<img src="https://img.shields.io/badge/TypeScript-4.x-blue.svg" />
-<img src="https://img.shields.io/badge/Firebase-Hosting-FFCA28.svg" />
-<img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+### Smart Student Book Marketplace
 
 **Books That Fit Your Budget.**
 
-Buy • Sell • Exchange • Donate  
-AI-powered pricing. Local connections. Secure trading.
+Buy • Sell • Exchange • Donate
 
-🌍 **Live App:** https://budgetbookz-978b8.web.app  
+*AI-powered pricing. Local connections. Secure trading.*
+
+[![Live App](https://img.shields.io/badge/🌍%20Live%20App-budgetbookz-blue?style=for-the-badge)](https://budgetbookz-978b8.web.app)
+[![React](https://img.shields.io/badge/React-TypeScript-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
+[![Firebase](https://img.shields.io/badge/Firebase-Hosted-FFCA28?style=for-the-badge&logo=firebase)](https://firebase.google.com)
 
 </div>
 
@@ -20,61 +20,83 @@ AI-powered pricing. Local connections. Secure trading.
 
 ## 🎯 What is BudgetBookz?
 
-**BudgetBookz** is a modern student-focused book marketplace built to make buying and selling academic books smarter, faster, and more affordable.
+**BudgetBookz** is a modern student-focused book marketplace built to make buying and selling academic books smarter, faster, and more affordable. It allows students to:
 
-It allows students to:
+- 💰 Buy used books at affordable prices
+- 📚 Sell old textbooks with AI price suggestions
+- 🔁 Exchange books without spending money
+- 🎁 Donate books to verified organizations
+- 💬 Chat securely with buyers and sellers
 
-- 💰 Buy used books at affordable prices  
-- 📚 Sell old textbooks with AI price suggestions  
-- 🔁 Exchange books without spending money  
-- 🎁 Donate books to verified organizations  
-- 💬 Chat securely with buyers and sellers  
-
-It is built using a scalable cloud architecture powered by **Firebase**.
+Built using a scalable cloud architecture powered by **Firebase**.
 
 ---
 
 ## ✨ Core Features
 
-### 🛒 Buy & Sell Books
+<details>
+<summary>🛒 <strong>Buy & Sell Books</strong></summary>
+
 - Add book listings with images
 - Smart category & price filters
 - AI-based price suggestions
 - View count tracking
 - Edit, delete, and mark as sold
 
-### 🔁 Exchange System
+</details>
+
+<details>
+<summary>🔁 <strong>Exchange System</strong></summary>
+
 - Send exchange proposals
 - Accept or reject swaps
 - Track sent & received requests
 - Arrange exchange via chat
 
-### 💬 Real-Time Chat
+</details>
+
+<details>
+<summary>💬 <strong>Real-Time Chat</strong></summary>
+
 - Firebase-powered chat system
 - Secure buyer ↔ seller communication
 - Organized conversation threads
 
-### 🤖 AI Book Assistant
+</details>
+
+<details>
+<summary>🤖 <strong>AI Book Assistant</strong></summary>
+
 - Natural language book search
 - Class-based smart suggestions
 - Intelligent filtering
 
-### 🎁 Donation Module
+</details>
+
+<details>
+<summary>🎁 <strong>Donation Module</strong></summary>
+
 - Donate books to organizations
 - Submit donation requests
 - Organization verification system
 
-### 🛡 Admin Dashboard
+</details>
+
+<details>
+<summary>🛡 <strong>Admin Dashboard</strong></summary>
+
 - Manage users
 - Monitor listings
 - Maintain platform quality
+
+</details>
 
 ---
 
 ## 🌟 Why BudgetBookz?
 
 | Feature | Benefit |
-|----------|----------|
+|:--------|:--------|
 | 🤖 AI Price Prediction | Fair market pricing |
 | 📍 Location-Based Search | Find books near you |
 | 🔐 Firebase Authentication | Secure login system |
@@ -88,7 +110,7 @@ It is built using a scalable cloud architecture powered by **Firebase**.
 ## 🛠 Tech Stack
 
 | Technology | Purpose |
-|------------|----------|
+|:-----------|:--------|
 | ⚛ React + TypeScript | Frontend |
 | ⚡ Vite | Build tool |
 | 🎨 Tailwind CSS | Styling |
@@ -101,46 +123,43 @@ It is built using a scalable cloud architecture powered by **Firebase**.
 ---
 
 ## 🏗 Architecture Overview
-
-Frontend (React + TypeScript)  
-⬇  
-Firebase Authentication  
-⬇  
-Cloud Firestore Database  
-⬇  
-Firebase Storage  
-⬇  
-Firebase Hosting  
+```
+Frontend (React + TypeScript)
+          ⬇
+Firebase Authentication
+          ⬇
+Cloud Firestore Database
+          ⬇
+   Firebase Storage
+          ⬇
+  Firebase Hosting
+```
 
 This ensures:
-
-- Real-time updates
-- Secure authentication
-- Cloud scalability
-- High performance
+- ⚡ Real-time updates
+- 🔐 Secure authentication
+- ☁️ Cloud scalability
+- 🚀 High performance
 
 ---
 
-# 🚀 Quick Start (Local Setup)
+## 🚀 Quick Start
 
-## 📦 1. Clone the Repository
-
+### 📦 Step 1 — Clone the Repository
 ```bash
 git clone https://github.com/harinadareddy11/budgetbookz-live.git
 cd budgetbookz-live
+```
 
-📦 2. Install Dependencies
+### 📥 Step 2 — Install Dependencies
+```bash
 npm install
+```
 
-⚙️ 3. Add Firebase Configuration
+### ⚙️ Step 3 — Configure Firebase
 
-Create a Firebase project and add your Firebase config inside:
-
-src/config/firebase.ts
-
-
-Add your credentials:
-
+Create a Firebase project and add your config inside `src/config/firebase.ts`:
+```typescript
 const firebaseConfig = {
   apiKey: "your_api_key",
   authDomain: "your_project.firebaseapp.com",
@@ -149,29 +168,28 @@ const firebaseConfig = {
   messagingSenderId: "your_sender_id",
   appId: "your_app_id"
 };
+```
 
-▶ 4. Run Development Server
+### ▶️ Step 4 — Run Development Server
+```bash
 npm run dev
+```
 
+> Open: [http://localhost:5173](http://localhost:5173)
 
-Open:
-
-http://localhost:5173
-
-🏁 Production Build
+### 🏁 Step 5 — Build & Deploy
+```bash
 npm run build
-
-
-Deploy:
-
 firebase deploy
+```
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
+```
 BudgetBookz/
 ├── public/
-│   ├── images/
-│   ├── logo files
-│
+│   └── images/
 ├── src/
 │   ├── components/
 │   ├── pages/
@@ -181,69 +199,72 @@ BudgetBookz/
 │   ├── types/
 │   ├── App.tsx
 │   └── main.tsx
-│
 ├── firebase.json
 ├── tailwind.config.ts
 ├── tsconfig.json
 ├── package.json
 └── README.md
+```
 
-🔐 Security Features
+---
 
-Firebase Authentication (Email & Phone)
+## 🔐 Security Features
 
-Firestore security rules
+- 🔥 Firebase Authentication (Email & Phone)
+- 🛡 Firestore security rules
+- 🔒 Secure storage rules
+- 💬 Private messaging system
+- ✅ Verified donation system
 
-Secure storage rules
+---
 
-Private messaging system
+## 🌍 Live Deployment
 
-Verified donation system
+> 🚀 Hosted on Firebase Hosting
+>
+> 🔗 **[https://budgetbookz-978b8.web.app](https://budgetbookz-978b8.web.app)**
 
-🌍 Live Deployment
+---
 
-🚀 Hosted on Firebase Hosting
+## 🤝 Contributing
 
-🔗 https://budgetbookz-978b8.web.app
+Contributions are welcome! Follow these steps:
 
-🤝 Contributing
+**1. Fork the repository**
 
-Contributions are welcome!
-
-Steps:
-
-Fork the repository
-
-Create a branch
-
+**2. Create your feature branch**
+```bash
 git checkout -b feature/AmazingFeature
+```
 
-
-Commit changes
-
+**3. Commit your changes**
+```bash
 git commit -m "Add AmazingFeature"
+```
 
-
-Push branch
-
+**4. Push to the branch**
+```bash
 git push origin feature/AmazingFeature
+```
 
+**5. Open a Pull Request**
 
-Open a Pull Request
+---
 
-👨‍💻 Author
+## 👨‍💻 Author
+
+**Hari Nadar Reddy**
+
+[![GitHub](https://img.shields.io/badge/GitHub-harinadareddy11-181717?style=flat&logo=github)](https://github.com/harinadareddy11)
+
+---
+
 <div align="center">
-
-Hari Nadar Reddy
-
-GitHub
 
 Built with ❤️ to reduce student book costs and build smarter academic communities.
 
+⭐ **Star this repository if BudgetBookz helped you!**
+
+*Making books affordable, one student at a time.* 📚✨
+
 </div>
-<div align="center">
-⭐ Star this repository if BudgetBookz helped you!
-
-Making books affordable, one student at a time. 📚✨
-
-</div> ```
